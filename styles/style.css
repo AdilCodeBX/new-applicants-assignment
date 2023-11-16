@@ -17,6 +17,7 @@
     justify-content: center;
     align-items: center;
     background-color: darkslategrey;
+    border-color: orangered;
 }
 
 .calculator {
@@ -36,13 +37,14 @@ input {
     justify-content: right;
     text-align: right;
     cursor: pointer;
-    border: transparent;
+    border: none;
     border-radius: 30px;
     font-size: 35px;
     grid-column: span 4;
 }
 input::placeholder {
     color: grey;
+    border-radius: transparent;
 }
 /* style for the buttons */
 button {
@@ -51,10 +53,13 @@ button {
     border-radius: 15px;
     cursor: pointer;
 }
+.number {
+    background-color: transparent;
+}
 
 button:hover {
     background-color: grey;
-    border-color: transparent;
+    border-color: rgb(32, 36, 36);
 }
 
 button:active {
